@@ -1,0 +1,190 @@
+html {
+    height: 100%;
+    width: 100%
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#board {
+    height: 600px;
+    width: 670px;
+    background-color: blue;
+    border: 10px solid navy;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.tile {
+    height: 70px;
+    width: 75px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid navy
+}
+
+.red-piece {
+    background-color: red;
+}
+
+.yellow-piece {
+    background-color: yellow
+}
+
+.recent-yellow-piece {
+    border: 5px solid orange
+}
+
+.winning-piece {
+    border: 5px solid #66ff00
+}
+
+.score-board {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 200px;
+    width: 100%;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#player-score {
+    width: 10px;
+    margin-left: 10px;
+}
+
+#computer-score {
+    width: 10px;
+    margin-left: 10px;
+}
+
+.player-score-board {
+    display: flex;
+    flex-direction: row;
+}
+
+.computer-score-board {
+    display: flex;
+    flex-direction: row;
+}
+
+#winner {
+    height: 30px;
+}
+
+#restart-btn {
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    border: 2px solid navy;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+#restart-btn:hover {
+    background-color: rgb(0, 0, 184);
+}
+
+@media (650px <=width <=700px) {
+    #board {
+        height: 500px;
+        width: 570px;
+        border: 8px solid navy;
+    }
+
+    .tile {
+        height: 55px;
+        width: 60px;
+    }
+}
+
+@media (520px <=width <=650px) {
+    #board {
+        height: 400px;
+        width: 470px;
+        border: 8px solid navy;
+    }
+
+    .tile {
+        height: 40px;
+        width: 45px;
+    }
+}
+
+@media (400px <=width <=520px) {
+    #board {
+        height: 300px;
+        width: 370px;
+        border: 6px solid navy;
+    }
+
+    .tile {
+        height: 30px;
+        width: 35px;
+        border: 3px solid navy
+    }
+
+    .score-board {
+        column-gap: 150px;
+        font-size: 16px;
+    }
+
+    .recent-yellow-piece {
+        border: 3px solid orange
+    }
+
+    .winning-piece {
+        border: 3px solid #66ff00
+    }
+}
+
+@media (350px <=width <=400px) {
+    html {
+        height: 100%;
+        width: 100%
+    }
+
+    #board {
+        height: 250px;
+        width: 320px;
+        border: 4px solid navy;
+    }
+
+    .tile {
+        height: 25px;
+        width: 30px;
+        border: 3px solid navy
+    }
+
+    .score-board {
+        column-gap: 100px;
+        font-size: 16px;
+    }
+
+    .recent-yellow-piece {
+        border: 3px solid orange
+    }
+
+    .winning-piece {
+        border: 3px solid #66ff00
+    }
+}
